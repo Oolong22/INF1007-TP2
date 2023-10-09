@@ -75,7 +75,7 @@ def executer_cycle_predateur(grille, ligne, col, animal):
                 definir_case(grille, case, lig_enfant, col_enfant)
                 incrementer_nb_predateurs(grille)
     else:
-        ajouter_energie(animal, -10)
+        ajouter_energie(animal, -1)
         nb_voisins, lig_voisin, col_voisin = choix_voisin_autour(grille, ligne, col, Contenu.VIDE)
         if lig_voisin is not None:
             case = obtenir_case(grille, ligne, col)
